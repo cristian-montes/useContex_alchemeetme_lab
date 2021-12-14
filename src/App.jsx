@@ -10,15 +10,15 @@ function App() {
   // const [user, setUser] = useState({}) -- code before contextAPI
   const{ setUser } = useUser();
 
-  useEffect(() => {
-    fetchUser()
-      .then((fetchedUser) => {
-        setUser(fetchedUser)
-      })
-      .catch((error) => {
-        throw new Error(`Error: ${error}`)
-      })
-  }, [setUser])
+  // useEffect(() => {
+  //   fetchUser()
+  //     .then((fetchedUser) => {
+  //       setUser(fetchedUser)
+  //     })
+  //     .catch((error) => {
+  //       throw new Error(`Error: ${error}`)
+  //     })
+  // }, [setUser])
 
   return (
     // <Layout user={user}>
